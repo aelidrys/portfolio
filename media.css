@@ -1,7 +1,17 @@
-@media (max-width:1000px) {
+@media (max-width:1110px) {
  
+  .presentation, .about_me .container {
+     flex-direction: column;
+  } 
+  .presentation__img img {
+   width: 380px;
+ }
 }
 
-@media (max-width:680px){
-   
+@media (max-width:780px){
+
+ .project .cards .card {
+   width: 260px;
+ }
+
 }

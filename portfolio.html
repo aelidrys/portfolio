@@ -11,6 +11,7 @@
 </head>
 <body>
     <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="media.css">
     <!-- header -->
     <div class="my_head">
 
@@ -26,7 +27,6 @@
     <!-- header end-->
     <!-- presentation -->
     <div id="home_" class="container">
-        
 
         <div  class="presentation">
             <div class="presentation__bio">
@@ -50,16 +50,24 @@
                 </div>
                 <div class="icons">
                     <div class="">
-                        <i class="fas fa-envelope"></i>
+                        <a href="https://www.linkedin.com/in/ayoub-elidryssy-49375b312/">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
                     </div>
                     <div class="">
-                        <i class="fa-brands fa-linkedin"></i>
+                        <a href="https://github.com/aelidrys">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
                     </div>
                     <div class="">
-                        <i class="fa-brands fa-github"></i>
+                        <a href="https://www.kaggle.com/ayoubedark78">
+                            <i class="fa-brands fa-kaggle"></i>
+                        </a>
                     </div>
                     <div class="">
-                        <i class="fa-brands fa-kaggle"></i>
+                        <a href="">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
                     </div>
                 </div>
 
@@ -71,44 +79,39 @@
                 <img src="img/home_avatar.png" alt="">
             </div>
         </div>
-
     </div>
     <!-- presentation End -->
+
+    <!-- Aout -->
     <div id="about_" class="about_me">
         <div class="container">
-        
+            <div class="presentation__img">
+                <img src="img/about_avatar.png" alt="">
+            </div>
+            <div class="presentation__bio">
+                <div class="about">
 
-            <!-- presentation -->
-            <div class="presentation">
-                <div class="presentation__img">
-                    <img src="img/about_avatar.png" alt="">
+                    <div class="">
+                        About
+                    </div>
+                    <div class="">
+                        Me
+                    </div>
                 </div>
-                <div class="presentation__bio">
-                    <div class="about">
-    
-                        <div class="">
-                            About
-                        </div>
-                        <div class="">
-                            Me
-                        </div>
-                    </div>
-                    <div class="role">
-                        Frontend Developer
-                    </div>
-                    <div class="description">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem voluptatum dolore veniam corporis magni rerum est, cum, earum itaque enim repudiandae distinctio sint sit quam cumque fuga? Quibusdam, dolorum soluta!
-                    </div>
-    
-                    <div class="cvDownload_button">
-                        Read More
-              
-                    </div>
+                <div class="role">
+                    Frontend Developer
+                </div>
+                <div class="description">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem voluptatum dolore veniam corporis magni rerum est, cum, earum itaque enim repudiandae distinctio sint sit quam cumque fuga? Quibusdam, dolorum soluta!
+                </div>
+
+                <div class="cvDownload_button">
+                    Read More 
                 </div>
             </div>
-             <!-- presentation End -->
         </div>
     </div>
+    <!-- About End -->
 
     <!-- Services -->
     <div id="service_" class="services">
@@ -128,7 +131,7 @@
             </div>
             <!-- graphig design card -->
             <div class="card">
-                <div class="icon"><i class="fa-solid fa-paintbrush"></i></div>
+                <div class="icon"><i class="fa-solid fa-gears"></i></div>
                 <div class="title">Backend Development</div>
                 <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque repellat porro, rem eligendi voluptatum quaerat ab, vel explicabo recusandae aliquam quas quis consequatur, laudantium maiores quam. In voluptas recusandae excepturi!</div>
                 <div class="read_more_button">
@@ -137,7 +140,7 @@
             </div>
             <!-- digital marketing card -->
             <div class="card">
-                <div class="icon"><i class="fa-solid fa-chart-simple"></i></div>
+                <div class="icon"><i class="fa-solid fa-brain"></i></div>
                 <div class="title">Machine Learning</div>
                 <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque repellat porro, rem eligendi voluptatum quaerat ab, vel explicabo recusandae aliquam quas quis consequatur, laudantium maiores quam. In voluptas recusandae excepturi!</div>
                 <div class="read_more_button">
@@ -147,6 +150,7 @@
         </div>
     </div>
     <!-- Services End -->
+
     <!-- Project -->
      <div id="portfolio_" class="project">
         <div class="title">
@@ -202,12 +206,12 @@
         </div>
         <div class="contact_fields">
             <div class="field_row">
-                <input type="text" class="" placeholder="full name">
+                <input type="text" class="capitle" placeholder="full name">
                 <input type="email" class="" placeholder="email address">
             </div>
             <div class="field_row">
                 <input type="number" class="" placeholder="phone number">
-                <input type="text" class="" placeholder="subject">
+                <input type="text" class="capitle" placeholder="subject">
             </div>
             <div class="message">
                 <textarea name="" id="" placeholder="your message" rows="10"></textarea>

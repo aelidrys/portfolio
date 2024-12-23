@@ -21,14 +21,11 @@ body {
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    /* max-width: 1240px; */
-    /* border: 1px solid red; */
     background-color: var(--prem_bg_color);
     z-index: 1000;
 }
 
 .navbar {
-    /* border: 1px solid yellow; */
     width: fit-content;
     height: fit-content;
     color: white;
@@ -80,13 +77,15 @@ body {
     color: white;
     font-weight: 300;
     gap: 15PX;
-
+    height: 100vh;
 }
 
+
+/* presentation__bio children */
 .presentation .presentation__bio {
     flex-grow: 1;
 }
-/* presentation__bio children */
+
 .presentation__bio  .sub_title {
     font-size: 25px;
     font-weight: 800;
@@ -115,7 +114,6 @@ body {
     font-weight: 800; 
     margin-left: 6px;
     color: var(--main_color);
-    /* border: 1px solid red; */
     position: relative;
 }
 
@@ -127,10 +125,9 @@ body {
     width: 100%;
     height: 100%;
     background-color: #20242D;
-    /* border: 1px solid red; */
     border-left: 2px solid var(--main_color);
     animation: animate 6s steps(16) infinite;
- }
+}
 
 @keyframes animate {
     40%, 60% {
@@ -201,14 +198,55 @@ body {
 }
 /* presentation__bio children End */
 
+.presentation__img img {
+    margin-top: 30px;
+    width: 500px;
+}
+.presentation .presentation__img {
+    min-width: 500px;
+    min-height: 500px;
+    position: relative;
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: center;
+    
+}
+.presentation .presentation__img img {
+    position: absolute;
+    animation: img_animation 4s infinite;
+    margin: 0;
+
+}
+
+
+@keyframes img_animation {
+    0%, 100% {
+        top: 0px;
+    }
+    50% {
+        top: -50px;
+    }
+
+}
+
+/* presentation End */
+
+
 /* About_me */
 
 .about_me {
+    height: 100vh;
     display: flex;
     background-color: var(--second_bg_color);
 }
 .about_me .container {
     background-color: var(--second_bg_color);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 300;
+    gap: 15PX;
 
 }
 
@@ -236,6 +274,7 @@ body {
 
 .services {
     padding: 20px 0 60px 0;
+    height: 100vh;
 }
 
 .services .title {
@@ -244,7 +283,7 @@ body {
     display: flex;
     color: white;
     gap: 8px;
-    margin: 50px auto;
+    margin: 80px auto;
     justify-content: center;
 
 }
@@ -311,8 +350,7 @@ body {
     flex-direction: column;
     background-color: var(--second_bg_color);
     padding-bottom: 50px;
-    /* max-width:; */
-    /* border: 1px solid red; */
+    height: 100vh;
 }
 
 .project .title {
@@ -378,6 +416,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .contact .title {
@@ -411,7 +450,6 @@ body {
 }
 
 .contact .contact_fields .field_row input,.contact .contact_fields textarea{
-    text-transform: capitalize;
     display: block;
     background-color: var(--second_bg_color);
     border: 0;
@@ -424,6 +462,10 @@ body {
     font-family:  "Poppins";
 
 }
+.contact .contact_fields .field_row  .capitle{
+    text-transform: capitalize;
+}
+
 .contact .contact_fields .field_row input:focus {
     border: 0;
     outline: 0;
@@ -468,10 +510,7 @@ body {
 
 /* contact End */
 
-.presentation .presentation__img img {
-    margin-top: 30px;
-    width: 500px;
-}
+
 
 
 
