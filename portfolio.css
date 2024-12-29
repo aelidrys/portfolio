@@ -153,15 +153,16 @@ body {
     height: 100%;
     background-color: #20242D;
     border-left: 2px solid var(--main_color);
+    transform: translateX(0);
     animation: animate 6s steps(16) infinite;
 }
 
 @keyframes animate {
     40%, 60% {
-        left: 100%;
+        transform: translateX(100%);
     }
     100% {
-        left: 0%;
+        transform: translateX(0);
     }
 }
 
@@ -247,16 +248,17 @@ body {
     position: absolute;
     animation: img_animation 4s infinite;
     margin: 0;
-
+    top: 0px;
+    transform: translateY(0);
 }
 
 
 @keyframes img_animation {
     0%, 100% {
-        top: 0px;
+        transform: translateY(0);
     }
     50% {
-        top: 50px;
+        transform: translateY(50px);
     }
 }
 
