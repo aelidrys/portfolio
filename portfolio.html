@@ -14,14 +14,24 @@
     <link rel="stylesheet" href="media.css">
     <!-- header -->
     <div class="my_head">
-
-        <div class="portf_text">Portfolio.</div>
-        <div class="navbar">
-            <div class="home_ active">Home</div>
-            <div class="about_">About</div>
-            <div class="service_">Services</div>
-            <div class="portfolio_">Portfolio</div>
-            <div class="contact_">Contact</div>
+        <div class="content">
+            <div class="portf_text">Portfolio.</div>
+            <div class="navbar">
+                <div class="home_ active">Home</div>
+                <div class="about_">About</div>
+                <div class="service_">Services</div>
+                <div class="portfolio_">Portfolio</div>
+                <div class="contact_">Contact</div>
+            </div>
+            <div class="bars-active_"><i class="fa-solid fa-bars"></i></div>
+            <!-- <div class="bars-deactive_"><i class="fa-solid fa-xmark"></i></div> -->
+            <div class="small-screen-navbar">
+                <div class="home_ active">Home</div>
+                <div class="about_">About</div>
+                <div class="service_">Services</div>
+                <div class="portfolio_">Portfolio</div>
+                <div class="contact_">Contact</div>
+            </div>
         </div>
     </div>
     <!-- header end-->
@@ -72,7 +82,7 @@
                 </div>
 
                 <div class="cvDownload_button">
-                    Download CV
+                    <a href="my_cv.pdf" download="my_cv.pdf">Download CV</a>
                 </div>
             </div>
             <div class="presentation__img">
@@ -115,36 +125,38 @@
 
     <!-- Services -->
     <div id="service_" class="services">
-        <div class="title">
-            <div class="">Our</div>
-            <div class="">Services</div>
-        </div>
-        <div class="card_container">
-            <!-- web devepopment card -->
-            <div class="card">
-                <div class="icon"><i class="fa-solid fa-code"></i></div>
-                <div class="title">Frontend Development</div>
-                <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque repellat porro, rem eligendi voluptatum quaerat ab, vel explicabo recusandae aliquam quas quis consequatur, laudantium maiores quam. In voluptas recusandae excepturi!</div>
-                <div class="read_more_button">
-                    Read More
-                </div>
+        <div class="container">
+            <div class="title">
+                <div class="">Our</div>
+                <div class="">Services</div>
             </div>
-            <!-- graphig design card -->
-            <div class="card">
-                <div class="icon"><i class="fa-solid fa-gears"></i></div>
-                <div class="title">Backend Development</div>
-                <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque repellat porro, rem eligendi voluptatum quaerat ab, vel explicabo recusandae aliquam quas quis consequatur, laudantium maiores quam. In voluptas recusandae excepturi!</div>
-                <div class="read_more_button">
-                    Read More
+            <div class="card_container">
+                <!-- web devepopment card -->
+                <div class="card">
+                    <div class="icon"><i class="fa-solid fa-code"></i></div>
+                    <div class="title">Frontend Development</div>
+                    <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque repellat porro, rem eligendi voluptatum quaerat ab, vel explicabo recusandae aliquam quas quis consequatur, laudantium maiores quam. In voluptas recusandae excepturi!</div>
+                    <div class="read_more_button">
+                        Read More
+                    </div>
                 </div>
-            </div>
-            <!-- digital marketing card -->
-            <div class="card">
-                <div class="icon"><i class="fa-solid fa-brain"></i></div>
-                <div class="title">Machine Learning</div>
-                <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque repellat porro, rem eligendi voluptatum quaerat ab, vel explicabo recusandae aliquam quas quis consequatur, laudantium maiores quam. In voluptas recusandae excepturi!</div>
-                <div class="read_more_button">
-                    Read More
+                <!-- graphig design card -->
+                <div class="card">
+                    <div class="icon"><i class="fa-solid fa-gears"></i></div>
+                    <div class="title">Backend Development</div>
+                    <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque repellat porro, rem eligendi voluptatum quaerat ab, vel explicabo recusandae aliquam quas quis consequatur, laudantium maiores quam. In voluptas recusandae excepturi!</div>
+                    <div class="read_more_button">
+                        Read More
+                    </div>
+                </div>
+                <!-- digital marketing card -->
+                <div class="card bellow">
+                    <div class="icon"><i class="fa-solid fa-brain"></i></div>
+                    <div class="title">Machine Learning</div>
+                    <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque repellat porro, rem eligendi voluptatum quaerat ab, vel explicabo recusandae aliquam quas quis consequatur, laudantium maiores quam. In voluptas recusandae excepturi!</div>
+                    <div class="read_more_button">
+                        Read More
+                    </div>
                 </div>
             </div>
         </div>
@@ -153,45 +165,47 @@
 
     <!-- Project -->
      <div id="portfolio_" class="project">
-        <div class="title">
-            <div class="">Last</div>
-            <div class="">Project</div>
-        </div>
-        <div class="cards">
-            <div class="card">
-                <img src="img/inception.jpg" alt="" class="">
-                <div class="description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad tempora non excepturi nostrum doloremque minus praesentium molestiae culpa. A quasi aspernatur dignissimos eius necessitatibus saepe illum! Sapiente, magni quidem.
-                </div>
+        <div class="container">
+            <div class="title">
+                <div class="">Last</div>
+                <div class="">Project</div>
             </div>
-            <div class="card">
-                <img src="img/inception.jpg" alt="" class="">
-                <div class="description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad tempora non excepturi nostrum doloremque minus praesentium molestiae culpa. A quasi aspernatur dignissimos eius necessitatibus saepe illum! Sapiente, magni quidem.
+            <div class="cards">
+                <div class="card">
+                    <img src="img/inception.jpg" alt="" class="">
+                    <div class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad tempora non excepturi nostrum doloremque minus praesentium molestiae culpa. A quasi aspernatur dignissimos eius necessitatibus saepe illum! Sapiente, magni quidem.
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="img/inception.jpg" alt="" class="">
-                <div class="description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad tempora non excepturi nostrum doloremque minus praesentium molestiae culpa. A quasi aspernatur dignissimos eius necessitatibus saepe illum! Sapiente, magni quidem.
+                <div class="card">
+                    <img src="img/inception.jpg" alt="" class="">
+                    <div class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad tempora non excepturi nostrum doloremque minus praesentium molestiae culpa. A quasi aspernatur dignissimos eius necessitatibus saepe illum! Sapiente, magni quidem.
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="img/inception.jpg" alt="" class="">
-                <div class="description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad tempora non excepturi nostrum doloremque minus praesentium molestiae culpa. A quasi aspernatur dignissimos eius necessitatibus saepe illum! Sapiente, magni quidem.
+                <div class="card">
+                    <img src="img/inception.jpg" alt="" class="">
+                    <div class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad tempora non excepturi nostrum doloremque minus praesentium molestiae culpa. A quasi aspernatur dignissimos eius necessitatibus saepe illum! Sapiente, magni quidem.
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="img/inception.jpg" alt="" class="">
-                <div class="description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad tempora non excepturi nostrum doloremque minus praesentium molestiae culpa. A quasi aspernatur dignissimos eius necessitatibus saepe illum! Sapiente, magni quidem.
+                <div class="card">
+                    <img src="img/inception.jpg" alt="" class="">
+                    <div class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad tempora non excepturi nostrum doloremque minus praesentium molestiae culpa. A quasi aspernatur dignissimos eius necessitatibus saepe illum! Sapiente, magni quidem.
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="img/inception.jpg" alt="" class="">
-                <div class="description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad tempora non excepturi nostrum doloremque minus praesentium molestiae culpa. A quasi aspernatur dignissimos eius necessitatibus saepe illum! Sapiente, magni quidem.
+                <div class="card">
+                    <img src="img/inception.jpg" alt="" class="">
+                    <div class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad tempora non excepturi nostrum doloremque minus praesentium molestiae culpa. A quasi aspernatur dignissimos eius necessitatibus saepe illum! Sapiente, magni quidem.
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/inception.jpg" alt="" class="">
+                    <div class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad tempora non excepturi nostrum doloremque minus praesentium molestiae culpa. A quasi aspernatur dignissimos eius necessitatibus saepe illum! Sapiente, magni quidem.
+                    </div>
                 </div>
             </div>
         </div>
@@ -200,25 +214,27 @@
 
      <!-- Contact -->
     <div id="contact_" class="contact">
-        <div class="title">
-            <div class="">Contact</div>
-            <div class="">Me</div>
-        </div>
-        <div class="contact_fields">
-            <div class="field_row">
-                <input type="text" class="capitle" placeholder="full name">
-                <input type="email" class="" placeholder="email address">
+        <div class="contact_form">
+            <div class="title">
+                <div class="">Contact</div>
+                <div class="">Me</div>
             </div>
-            <div class="field_row">
-                <input type="number" class="" placeholder="phone number">
-                <input type="text" class="capitle" placeholder="subject">
+            <div class="contact_fields">
+                <div class="field_row">
+                    <input type="text" class="capitle" placeholder="full name">
+                    <input type="email" class="" placeholder="email address">
+                </div>
+                <div class="field_row">
+                    <input type="number" class="" placeholder="phone number">
+                    <input type="text" class="capitle" placeholder="subject">
+                </div>
+                <div class="message">
+                    <textarea name="" id="" placeholder="your message" rows="10"></textarea>
+                </div>
             </div>
-            <div class="message">
-                <textarea name="" id="" placeholder="your message" rows="10"></textarea>
+            <div class="send_msg_button">
+                Send Message 
             </div>
-        </div>
-        <div class="send_msg_button">
-            Send Message 
         </div>
         <div class="footer">
             <div class="copyright">

@@ -12,20 +12,33 @@ body {
     font-style: normal;
     margin: 0;
     padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-width: 360px;
 }
 
 .my_head {
     position: fixed;
     top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     width: 100%;
     background-color: var(--prem_bg_color);
     z-index: 1000;
+    min-height: 60px;
+    max-height: 60px;
+    min-width: 360px;
+
 }
 
-.navbar {
+.my_head .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10%;
+
+}
+
+.my_head .content .navbar, .small-screen-navbar {
     width: fit-content;
     height: fit-content;
     color: white;
@@ -33,19 +46,43 @@ body {
     gap: 25px;
 }
 
-.navbar div {
+.small-screen-navbar {
+    display: none;
+    z-index: -500;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    padding: 1rem 3%;
+    background-color: var(--prem_bg_color);
+    left: 0;
+}
+
+.disp-block {
+    display: none !important;
+}
+
+.my_head .content .bars-active_, .my_head .content .bars-deactive_ {
+    display: none;
+    color: white;
+    font-size: 22px;
+    margin: 1rem 0;
+}
+
+.my_head .content .navbar div, .small-screen-navbar div {
     cursor: pointer;
-    font-weight: 300;
+    font-weight: 500;
+    margin: 1rem 0;
 }
-.navbar div:hover, .navbar .active {
-    color: var(--main_color)
+.navbar div:hover, .small-screen-navbar div:hover {
+    color: var(--main_color);
 }
-.navbar .active {
+.navbar .active, .small-screen-navbar .active {
+    color: var(--main_color);
     font-weight: 500;
 }
 
 
-.portf_text {
+.my_head .content .portf_text {
     color: white;
     font-size: 30px;
     width: fit-content;
@@ -54,11 +91,9 @@ body {
 }
 
 .container {
-    margin: 20px auto;
-    width: 90%;
-    max-width: 1240px;
+    width: 100%;
     background-color: var(--prem_bg_color);
-    border-radius: 15px;
+    /* border-radius: 15px; */
 }
 
 
@@ -71,20 +106,17 @@ body {
 /* Presentation */
 
 .presentation {
-    padding: 20px;
+    margin: 0 10%;
+    padding-top: 90px;
     display: flex;
     align-items: center;
     color: white;
     font-weight: 300;
-    gap: 15PX;
-    height: 100vh;
+    gap: 15px;
+    height: 90vh;
 }
 
 
-/* presentation__bio children */
-.presentation .presentation__bio {
-    flex-grow: 1;
-}
 
 .presentation__bio  .sub_title {
     font-size: 25px;
@@ -100,18 +132,13 @@ body {
 .presentation__bio .profile {
     margin-top: 8px;
     display: flex;
-
-    overflow: hidden;
-}
-
-.presentation__bio .profile .title {
     font-size: 25px;
     font-weight: 800;
 }
 
+
+
 .presentation__bio .profile .role {
-    font-size: 25px;
-    font-weight: 800; 
     margin-left: 6px;
     color: var(--main_color);
     position: relative;
@@ -196,15 +223,20 @@ body {
 .contact .send_msg_button:hover  {
     box-shadow: 0px 0px 0px var(--main_color);
 }
+
+.presentation__bio .cvDownload_button a {
+    text-decoration: none;
+    color: black;
+}
 /* presentation__bio children End */
 
 .presentation__img img {
     margin-top: 30px;
-    width: 500px;
+    width: 300px;
 }
 .presentation .presentation__img {
-    min-width: 500px;
-    min-height: 500px;
+    min-width: 400px;
+    min-height: 450px;
     position: relative;
     display: flex;
     /* border: 1px solid red; */
@@ -224,9 +256,8 @@ body {
         top: 0px;
     }
     50% {
-        top: -50px;
+        top: 50px;
     }
-
 }
 
 /* presentation End */
@@ -238,15 +269,17 @@ body {
     height: 100vh;
     display: flex;
     background-color: var(--second_bg_color);
+    width: 100%;
+    justify-content: center;
 }
 .about_me .container {
     background-color: var(--second_bg_color);
-    padding: 20px;
+    margin: 0 10%;
     display: flex;
     align-items: center;
     color: white;
     font-weight: 300;
-    gap: 15PX;
+    gap: 15px;
 
 }
 
@@ -273,8 +306,17 @@ body {
 /* Services */
 
 .services {
-    padding: 20px 0 60px 0;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.services .container {
+    width: 80%;
+    margin: 0 10%;
+    
 }
 
 .services .title {
@@ -283,7 +325,7 @@ body {
     display: flex;
     color: white;
     gap: 8px;
-    margin: 80px auto;
+    margin-bottom: 80px;
     justify-content: center;
 
 }
@@ -303,9 +345,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 400px;
     border-radius: 15px;
+    width: 400px;
     padding: 15px;
+}
+
+.services .card_container .card .bellow {
+    width: 400px;
 }
 
 .services .card_container .card:hover {
@@ -318,12 +364,13 @@ body {
     font-size: 60px;
     color: var(--main_color);
     text-align: center;
-    margin-top: 15px;
+    /* margin-top: 15px; */
 }
 
 .services .card_container .card .title {
     font-size: 25px;
     margin: 10px auto;
+    text-align: center;
 }
 
 .services .card_container .card .description {
@@ -349,8 +396,16 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: var(--second_bg_color);
-    padding-bottom: 50px;
     height: 100vh;
+    width: 100%;
+}
+
+.project .container {
+    width: 80%;
+    margin: 0 10%;
+    padding-top: 30px;
+    background-color: var(--second_bg_color);
+    
 }
 
 .project .title {
@@ -379,7 +434,7 @@ body {
 
 .project .cards .card {
     position: relative;
-    max-width: 360px;
+    max-width: 300px;
 }
 
 .project .cards .card .description {
@@ -401,8 +456,7 @@ body {
 
 .project .cards .card img {
     border-radius: 15px;
-    width: 350px;
-    height: 220px;
+    width: 100%;
     object-fit: cover;
     filter: brightness(40%);
 }
@@ -414,9 +468,14 @@ body {
 .contact {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 100vh;
+    width: 100%;
+}
+
+.contact .contact_form {
+    margin: auto 5%;
 }
 
 .contact .title {
@@ -474,9 +533,12 @@ body {
 .contact .contact_fields .message {
     margin-top: 10px;
 }
-
+.contact .send_msg_button {
+    margin-left: auto;
+    margin-right: auto;
+}
 .contact .contact_fields textarea {
-    padding: 10px 10px;
+    padding: 10px;
     width: calc(100% - 20px);
     resize: none;
 }

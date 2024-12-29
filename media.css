@@ -1,17 +1,188 @@
-@media (max-width:1110px) {
- 
+
+@media (max-width:1200px) {
+  /* PROJECT */
+  .project .cards .card {
+    width: 260px;
+  }
+  .project .cards .card .description {
+    font-size: 12px;
+  }
+  /* PROJECT */
+}
+
+
+@media (max-width:1000px) {
   .presentation, .about_me .container {
-     flex-direction: column;
-  } 
-  .presentation__img img {
-   width: 380px;
- }
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* SERVICES */
+  .services .card_container .card .icon {
+    font-size: 40px;
+  }
+  .services .card_container .card .title {
+    font-size: 17px;
+  }
+  .services .card_container .card .description {
+    font-size: 12px;
+  }
+  /* SERVICES */
+
+  /* PROJECT */
+  .project .cards .card {
+    width: 200px;
+  }
+  .project .cards .card .description {
+    font-size: 10px;
+  }
+  /* PROJECT */
+
 }
 
 @media (max-width:780px){
 
- .project .cards .card {
-   width: 260px;
+  /* HEAD */
+ .my_head .content .navbar {
+    display: none;
+  }
+  .disp-block {
+    display: block !important;
+  }
+  .my_head .content .bars-active_{
+    display: block;
+  }
+  /* HEAD */
+  
+ /* SERVICES */
+ .services .title {
+  font-size: 30px;
+  margin-bottom: 30px;
  }
+ .services .card_container {
+  flex-wrap: wrap;
+ }
+ .services .card_container .card {
+  width: 40%;
+ }
+ .services .card_container .bellow {
+  width: 88%;
+ }
+ .services .card_container .card .icon {
+    font-size: 30px;
+  }
+  .services .card_container .card .title {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .services .card_container .card .description {
+    font-size: 10px;
+  }
+  .services .card_container .card .read_more_button {
+    font-size: 12px;
+    margin: 15px auto;
+  }
+  /* SERVICES */
+
+  /* PROJECT */
+  .project .cards {
+    gap: 10px;
+  }
+  .project .title {
+    font-size: 30px;
+  }
+
+  /* PROJECT */
+
+  /* CONTCAT */
+  .contact .title {
+    font-size: 35px;
+    font-weight: 800;
+  }
+  .contact .send_msg_button {
+    padding: 8px 15px;
+    font-size: 13px;
+  }
+  /* CONTCAT */
+}
+
+@media (max-width:540px){
+
+  .presentation__bio .profile {
+    font-size: 20px;
+  }
+  .presentation__bio .name {
+    font-size: 30px;
+  }
+  .presentation__img img {
+    width: 250px;
+  }
+
+  /* SERVICES */
+  .services .card_container .card {
+    width: 90%;
+  }
+  .services .card_container .card .read_more_button {
+    margin-bottom: 0;
+    padding: 4px 10px;
+  }
+  .services .card_container .card .icon {
+    font-size: 25px;
+  }
+  .services .card_container .card .title {
+    font-size: 10px;
+  }
+  .services .card_container .card .description {
+    font-size: 8px;
+  }
+  /* SERVICES */
+
+  /* PROJECT */
+  .project {
+    overflow: scroll;
+  }
+  .project .cards .card {
+    width: 180px;
+  }
+  .project .title {
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  .project .cards .card .description {
+    font-size: 8px;
+  }
+  /* PROJECT */
+
+}
+
+@media (max-width:440px) {
+  .presentation__bio .profile, .about_me .presentation__bio .role  {
+    font-size: 15px;
+  }
+  .presentation__bio  .sub_title {
+    font-size: 25px;
+  }
+
+  /* ABOUT */
+  .about_me .about {
+    font-size: 25px;
+    font-weight: 900;
+  }
+  /* ABOUT */
+
+  /* CONTCAT */
+  .contact .title {
+    font-size: 25px;
+    font-weight: 800;
+  }
+  .contact .send_msg_button {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+  .contact .footer  {
+    font-size: 12px;
+    height: 55px;
+  }
+  /* CONTCAT */
 
 }
