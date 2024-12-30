@@ -185,4 +185,9 @@
   }
   /* CONTCAT */
 
+  .project .container  {
+    margin: 0 2%;
+    width: 96%;
+  }
+
 }

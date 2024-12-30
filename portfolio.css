@@ -113,7 +113,7 @@ body {
     color: white;
     font-weight: 300;
     gap: 15px;
-    height: 90vh;
+    min-height: 90vh;
 }
 
 
