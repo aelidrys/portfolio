@@ -142,6 +142,7 @@ body {
     margin-left: 6px;
     color: var(--main_color);
     position: relative;
+    overflow: hidden;
 }
 
 .presentation__bio .profile .role:before {
@@ -155,6 +156,7 @@ body {
     border-left: 2px solid var(--main_color);
     transform: translateX(0);
     animation: animate 6s steps(16) infinite;
+    
 }
 
 @keyframes animate {
