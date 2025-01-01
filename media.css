@@ -7,6 +7,10 @@
   .project .cards .card .description {
     font-size: 12px;
   }
+  .project .cards .card .description .title {
+    font-size: 15px;
+    font-weight: 600;
+  }
   /* PROJECT */
 }
 
@@ -35,6 +39,10 @@
   }
   .project .cards .card .description {
     font-size: 10px;
+  }
+  .project .cards .card .description .title {
+    font-size: 13px;
+    font-weight: 600;
   }
   /* PROJECT */
 
@@ -107,6 +115,10 @@
   .project .title {
     font-size: 30px;
   }
+  .project .cards .card .description .title {
+    font-size: 13px;
+    font-weight: 600;
+  }
 
   /* PROJECT */
 
@@ -161,6 +173,10 @@
   /* PROJECT */
   .project .cards .card {
     width: 150px;
+  }
+  .project .cards .card .description .title {
+    font-size: 10px;
+    font-weight: 500;
   }
   .project .title {
     margin-bottom: 15px;

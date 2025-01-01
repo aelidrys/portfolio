@@ -129,6 +129,7 @@ body::-webkit-scrollbar-thumb:hover {
     padding-top: 90px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     color: white;
     font-weight: 300;
     gap: 15px;
@@ -311,6 +312,7 @@ body::-webkit-scrollbar-thumb:hover {
     margin: 0 10%;
     display: flex;
     align-items: center;
+    justify-content: center;
     color: white;
     font-weight: 300;
     gap: 15px;
@@ -477,39 +479,49 @@ body::-webkit-scrollbar-thumb:hover {
 .project .cards .card {
     position: relative;
     max-width: 300px;
+    overflow: hidden;
+    color: white;
+    font-weight: 400;
+    border-radius: 15px;
 }
 
 .project .cards .card .description {
     position: absolute;
-    inset: 10px;
-    transform: translateY(50px);
-    color: white;
-    font-weight: 300;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    transform: translateY(100%);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    transition: all .5s ease-in-out;
-    opacity: 0;
+    text-align: center;
+    transition: .5s ease;
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--main_color));
 }
 .project .cards .card .description .title {
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 800;
     margin: 2px auto;
     gap: 0;
 }
 
 .project .cards .card:hover .description {
-    opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0);
+    
 }
 
 .project .cards .card img {
-    border-radius: 15px;
     width: 100%;
     height: 100%;
     object-fit: cover;
     filter: brightness(40%);
+    transition: .5s ease;
 }
+.project .cards .card:hover img {
+    transform: scale(1.1);
+} 
 
 /* Projects End */
 
