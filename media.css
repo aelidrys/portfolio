@@ -53,7 +53,23 @@
     display: block;
   }
   /* HEAD */
-  
+  .read_more_button {
+
+    font-size: 12px;
+    margin: 15px 0;
+  }
+
+  /* ABOUT_ME */
+  .presentation__bio .description {
+    font-size: 12px;
+    font-weight: 300;
+  }
+  .presentation__bio .description .large-size {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  /* ABOUT_ME */
+
  /* SERVICES */
  .services .title {
   font-size: 30px;
@@ -117,6 +133,11 @@
   .presentation__img img {
     width: 250px;
   }
+  .read_more_button {
+    padding: 4px 10px;
+    font-size: 13px;
+  }
+
 
   /* SERVICES */
   .services .card_container .card {
@@ -138,24 +159,24 @@
   /* SERVICES */
 
   /* PROJECT */
-  .project {
-    overflow: scroll;
-  }
   .project .cards .card {
-    width: 180px;
+    width: 150px;
   }
   .project .title {
     margin-bottom: 15px;
     font-size: 20px;
   }
   .project .cards .card .description {
-    font-size: 8px;
+    font-size: 7px;
   }
   /* PROJECT */
 
 }
 
 @media (max-width:440px) {
+  body::-webkit-scrollbar {
+    display: none;
+  }
   .presentation__bio .profile, .about_me .presentation__bio .role  {
     font-size: 15px;
   }
@@ -185,9 +206,10 @@
   }
   /* CONTCAT */
 
+  /* PROJECT */
   .project .container  {
     margin: 0 2%;
     width: 96%;
   }
-
+  /* PROJECT */
 }
