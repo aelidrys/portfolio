@@ -599,6 +599,10 @@ body::-webkit-scrollbar-thumb:hover {
     margin-left: auto;
     margin-right: auto;
 }
+.contact .send_msg_button .button {
+    all: unset;
+}
+
 .contact .contact_fields textarea {
     padding: 10px;
     width: calc(100% - 20px);
