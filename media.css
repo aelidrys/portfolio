@@ -19,6 +19,8 @@
   .presentation, .about_me .container {
     flex-direction: column;
     justify-content: center;
+  }
+  .about_me .container {
     flex-direction: column-reverse;
   }
 
@@ -208,6 +210,20 @@
   }
   /* ABOUT */
 
+  /* SERVICES */
+  .services .page_title {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+  /* SERVICES */
+
+  /* PROJECT */
+  .project .container  {
+    margin: 0 2%;
+    width: 96%;
+  }
+  /* PROJECT */
+
   /* CONTCAT */
   .contact .title {
     font-size: 25px;
@@ -222,11 +238,4 @@
     height: 55px;
   }
   /* CONTCAT */
-
-  /* PROJECT */
-  .project .container  {
-    margin: 0 2%;
-    width: 96%;
-  }
-  /* PROJECT */
 }
