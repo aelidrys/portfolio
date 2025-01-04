@@ -103,13 +103,16 @@ function read_more(readMoreBotton, textDiv){
     }
 }
 
-// scroll animation 
+// Scroll Reveal 
 ScrollReveal({
-    reset: true,
+    // reset: true,
     distance: '80px',
     duration: 2000,
     delay: 200,
 });
 
-ScrollReveal().reveal('#home_', {origin: top});
+ScrollReveal().reveal('.presentation .presentation__bio, .page_title', {origin: 'top'});
+ScrollReveal().reveal('.presentation .presentation__img, .services .card_container, .project .cards, .contact .contact_fields, .contact .send_msg_button', {origin: 'bottom'});
+ScrollReveal().reveal('.presentation__bio .name, .about_me .presentation__img', {origin: 'left'});
+ScrollReveal().reveal('.about_me .presentation__bio', {origin: 'right'});
 

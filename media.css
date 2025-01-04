@@ -19,6 +19,7 @@
   .presentation, .about_me .container {
     flex-direction: column;
     justify-content: center;
+    flex-direction: column-reverse;
   }
 
   /* SERVICES */
