@@ -60,17 +60,28 @@ back_to_top.addEventListener("click", (e)  => {
 
 // Active and Deactive Small-Screen-Navbar
 const menu_icon = document.querySelector(".my_head .content .bars-active_")
+const show_navbar = document.querySelector(".showNav")
+const hide_navbar = document.querySelector(".hideNav")
 menu_icon.addEventListener("click", (e)=> {
     const navbar = document.querySelector(".my_head .content .small-screen-navbar")
+    show_navbar.classList.toggle("displayed__")
+    hide_navbar.classList.toggle("displayed__")
     if (navbar.classList.contains("disp-block")){
-        menu_icon.innerHTML = '<i class="fa-solid fa-bars"></i>'
         navbar.classList.remove("disp-block")
     }
     else {
-        menu_icon.innerHTML = '<i class="fa-solid fa-xmark"></i>'
         navbar.classList.add("disp-block")
     }
 })
+
+document.addEventListener("click", (event) => {
+    const navbar = document.querySelector(".my_head .content .small-screen-navbar")
+    if (!navbar.contains(event.target) && event.target !== show_navbar) {
+        show_navbar.classList.add("displayed__")
+        hide_navbar.classList.remove("displayed__")
+        navbar.classList.remove("disp-block")
+    }
+});
 
 // .Read More in About Me
 const readMoreBotton = document.querySelector(".about_me .read_more_button")
@@ -110,7 +121,6 @@ ScrollReveal({
     duration: 2000,
     delay: 200,
 });
-
 ScrollReveal().reveal('.presentation .presentation__bio, .page_title', {origin: 'top'});
 ScrollReveal().reveal('.presentation .presentation__img, .services .card_container, .project .cards, .contact .contact_fields, .contact .send_msg_button', {origin: 'bottom'});
 ScrollReveal().reveal('.presentation__bio .name, .about_me .presentation__img', {origin: 'left'});

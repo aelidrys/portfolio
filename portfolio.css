@@ -87,6 +87,12 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 22px;
     margin: 1rem 0;
 }
+.my_head .content .bars-active_ :last-child, .my_head .content .bars-active_ :first-child {
+    display: none;
+}
+.my_head .content .bars-active_ .displayed__ {
+    display: block;
+}
 
 .my_head .content .navbar div, .small-screen-navbar div {
     cursor: pointer;
