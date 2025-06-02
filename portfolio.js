@@ -126,3 +126,11 @@ ScrollReveal().reveal('.presentation .presentation__img, .services .card_contain
 ScrollReveal().reveal('.presentation__bio .name, .about_me .presentation__img', {origin: 'left'});
 ScrollReveal().reveal('.about_me .presentation__bio', {origin: 'right'});
 
+
+const cvSelector = document.getElementById('cvSelector');
+const downloadBtn = document.getElementById('downloadBtn');
+
+cvSelector.addEventListener('change', function () {
+    downloadBtn.href = this.value;
+    downloadBtn.setAttribute('download', this.value);
+});

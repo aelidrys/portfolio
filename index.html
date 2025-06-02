@@ -60,7 +60,7 @@
                 </div>
                 <div class="description">
                     i am a student at <span class="large-size">UM6P</span> in <span class="large-size">1337 Coding school</span>, i am passionate about both of
-                    <span class="large-size">full-stack development</span> and <span class="large-size">machine learning</span>
+                    <span class="large-size">machine learning</span> and <span class="large-size">full-stack development</span>
                 </div>
                 <div class="icons">
                     <div class="">
@@ -78,16 +78,22 @@
                             <i class="fa-brands fa-kaggle"></i>
                         </a>
                     </div>
-                    <div class="">
+                    <!-- <div class="">
                         <a href="">
                             <i class="fa-brands fa-telegram"></i>
                         </a>
-                    </div>
+                    </div> -->
                 </div>
 
-                <div class="cvDownload_button">
-                    <a href="my_cv.pdf" download="my_cv.pdf">Download CV</a>
-                </div>
+            <div class="cvDownload_button">
+                <a id="downloadBtn" href="ai_cv.pdf" download>
+                    <button>Download CV</button>
+                </a>
+                <select id="cvSelector">
+                    <option value="ai_cv.pdf">AI</option>
+                    <option value="webdev_cv.pdf">WebDev</option>
+                </select>
+            </div>
             </div>
             <div class="presentation__img">
                 <img src="img/Home.png" alt="">
@@ -142,54 +148,44 @@
                 <div class="">Services</div>
             </div>
             <div class="card_container">
-                <!-- web devepopment card -->
-                <div class="card">
-                    <div class="icon"><i class="fa-solid fa-code"></i></div>
-                    <div class="title">Frontend Development</div>
-                    <div class="description first">
-                        I specialize in creating engaging, responsive, and user-friendly websites using JavaScript, HTML, 
-                        and CSS. Whether you need an interactive web application, a sleek portfolio, or a dynamic user 
-                        interface, I can build solutions tailored to your needs. With my experience in frontend development
-                        , including projects like a ping pong game and my personal portfolio, I ensure that every website 
-                        I work on is not only functional but also provides an excellent user experience across all devices. 
-                        I focus on clean code, modern design principles, and seamless interaction to help bring your ideas 
-                        to life on the web.
-                    </div>
-                    <div class="read_more_button first">Read More</div>
-                </div>
-                <!-- graphig design card -->
-                <div class="card">
-                    <div class="icon"><i class="fa-solid fa-gears"></i></div>
-                    <div class="title">Backend Development</div>
-                    <div class="description second">
-                        I have experience in backend development using Django, specializing in building 
-                        authentication systems and managing complex processes such as tournament management
-                        , booking, and sales, and developing real-time chat messaging systems. In a recent 
-                        project, I leveraged Django to create a secure authentication system for users and 
-                        to handle the backend logic for a ping pong game's tournament structure. I focus on 
-                        developing scalable, secure, and efficient backend solutions, ensuring smooth data 
-                        management and seamless user interactions. Whether you need to manage user data, 
-                        integrate authentication, or automate workflows, I can create custom solutions 
-                        that meet your specific needs.
-                    </div>
-                    <div class="read_more_button second">Read More</div>
-                </div>
-                <!-- digital marketing card -->
+                <!-- MachineLearning card -->
                 <div class="card bellow">
                     <div class="icon"><i class="fa-solid fa-brain"></i></div>
                     <div class="title">Machine Learning</div>
                     <div class="description third">
-                        have developed a strong foundation in machine learning, learning from scratch how to 
-                        build models like linear regression and effectively apply them to real-world tasks. 
-                        My journey includes understanding data collection needs, preprocessing data, and 
-                        applying machine learning algorithms from libraries like scikit-learn to create new 
-                        models. I have worked on projects such as predicting house prices and car prices using 
-                        linear regression, which helped me deepen my understanding of model creation and evaluation. 
-                        I am passionate about leveraging machine learning to solve complex problems and can assist 
-                        in building tailored models to fit specific project needs.
+                        I specialize in building and evaluating machine learning models such as linear regression 
+                        and neural networks tailored to solve real-world problems. I can assist with every stage of 
+                        the ML pipeline: from data collection and preprocessing to model development, tuning, and deployment. 
+                        I also have hands-on experience with Retrieval-Augmented Generation (RAG) techniques using LlamaIndex 
+                        for building simple, context-aware AI applications.
                     </div>
                     <div class="read_more_button third">Read More</div>
                 </div>
+                <!-- Frontend card -->
+                <div class="card">
+                    <div class="icon"><i class="fa-solid fa-code"></i></div>
+                    <div class="title">Frontend Development</div>
+                    <div class="description first">
+                        I create responsive, user-friendly websites using React.js, JavaScript, HTML, and CSS. I focus 
+                        on clean code, modern design, and seamless interaction to ensure a smooth user experience across 
+                        all devices. Whether it’s an interactive application or a dynamic user interface, I can help bring 
+                        your ideas to life on the web.
+                    </div>
+                    <div class="read_more_button first">Read More</div>
+                </div>
+                <!-- Backend card -->
+                <div class="card">
+                    <div class="icon"><i class="fa-solid fa-gears"></i></div>
+                    <div class="title">Backend Development</div>
+                    <div class="description second">
+                        I specialize in backend development using Django, with experience in building secure authentication 
+                        systems, managing complex processes like tournament structures, booking, and sales, and developing 
+                        real-time chat messaging systems. I focus on creating scalable, efficient, and secure backend solutions 
+                        that ensure smooth data handling and seamless user experiences.
+                    </div>
+                    <div class="read_more_button second">Read More</div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -203,52 +199,85 @@
                 <div class="">Project</div>
             </div>
             <div class="cards">
-
-                <div class="card">
-                    <img src="img/miniSh.webp" alt="" class="">
-                    <div class="description">
-                        <span class="title">Mini Shell</span>
-                        a mini bash shell using C. This project enhanced my understanding of system calls, process management
-                        , and command-line interface functionality.
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/cub3d.jpeg" alt="" class="">
-                    <div class="description">
-                        <span class="title">Cub3D</span>
-                        In Cub3D, I developed a simple 3D game using C and ray casting techniques. This project allowed me 
-                        to explore graphics programming, game mechanics, and low-level rendering.
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/inception.jpg" alt="" class="">
-                    <div class="description">
-                        <span class="title">Inception</span>
-                        this project focused on using Docker and containerization to explore and implement microservices architecture. 
-                        This project helped me gain hands-on experience in deploying, managing, and orchestrating containers.
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/webServ.jpg" alt="" class="">
-                    <div class="description">
-                        <span class="title">Webserv</span>
-                        this project is a simple web server in C++ to enhance skills in low-level programming, socket programming, 
-                        and HTTP communication, with handling requests, manage connections, serving response.
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/transe.png" alt="" class="">
-                    <div class="description">
-                        <span class="title">Transcendence</span>
-                        is a website of ping pong game with possibility of create users and play games and tournaments, store matches 
-                        and tournaments in data base, by using Django in Backend and JS,HTML,CSS in Frontend and Postgresql databas
-                    </div>
-                </div>
+                <!-- House Prise Prediction -->
                 <div class="card">
                     <img src="img/HPPredictio1.png" alt="" class="">
                     <div class="description">
                         <span class="title">House Prise Prediction</span>
                         this project is a introduction to Machine Learning, aime to predict the price of new houses.
+                        <div class="showDemo">
+                            <a href="https://github.com/aelidrys/Machine-Learning_Projects/tree/main/House_Price">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Trip Duration Prediction -->
+                <div class="card">
+                    <img src="img/TripDuration.png" alt="" class="">
+                    <div class="description">
+                        <span class="title">Trip Duration Prediction</span>
+                        A machine learning project based on a Kaggle dataset where I predicted taxi trip durations 
+                        using Ridge regression.
+                        <div class="showDemo">
+                            <a href="https://github.com/aelidrys/Machine-Learning_Projects/tree/main/Trip_Duration">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Transcendence -->
+                <div class="card">
+                    <img src="img/transe.png" alt="" class="">
+                    <div class="description">
+                        <span class="title">Transcendence</span>
+                        A full-stack web app for playing ping pong with user accounts, matches, and tournaments, 
+                        and real-time chat, using Django, PostgreSQL, JS, HTML, and CSS.
+                        <div class="showDemo">
+                            <a href="https://github.com/aelidrys/ft_transcendence">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Webserv -->
+                <div class="card">
+                    <img src="img/webServ.jpg" alt="" class="">
+                    <div class="description">
+                        <span class="title">Webserv</span>
+                        A simple HTTP web server written in C++, inspired by Nginx, supporting GET, POST, and DELETE methods.
+                        <div class="showDemo">
+                            <a href="">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Inception -->
+                <div class="card">
+                    <img src="img/inception.jpg" alt="" class="">
+                    <div class="description">
+                        <span class="title">Inception</span>
+                        A DevOps project focused on Docker and containers to build and manage services in isolated environments.
+                        <div class="showDemo">
+                            <a href="https://github.com/aelidrys/42-Project/tree/main/Inception">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cub3D -->
+                <div class="card">
+                    <img src="img/cub3d.jpeg" alt="" class="">
+                    <div class="description">
+                        <span class="title">Cub3D</span>
+                        In Cub3D, I developed a simple 3D game using C and ray casting techniques. This project allowed me 
+                        to explore graphics programming.
+                        <div class="showDemo">
+                            <a href="https://github.com/aelidrys/42-Project/tree/main/Cub3D">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
 

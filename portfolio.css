@@ -219,8 +219,8 @@ body::-webkit-scrollbar-thumb:hover {
     gap: 20px;
 }
 .presentation__bio .icons div {
-    width: 25px;
-    height: 25px;
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -233,10 +233,10 @@ body::-webkit-scrollbar-thumb:hover {
     box-shadow: 1px 1px 12px var(--main_color);
 }
 
-.presentation__bio .icons div i {
-    margin-top: 2px;
+.presentation__bio .icons div i{
+    margin-top: 4px;
     color: var(--main_color);
-    font-size: 15px;
+    font-size: 20px;
     display: inline-block;
 }
 
@@ -532,7 +532,37 @@ body::-webkit-scrollbar-thumb:hover {
     transform: scale(1.1);
 } 
 
+.project .cards .card .description i {
+    margin-top: 5px;
+    font-size: 25px;
+    display: inline-block;
+    border-radius: 50%;
+    color: var(--second_bg_color);
+    background-color: wheat;
+}
+.project .cards .card .description div:hover i {
+    
+    background-color: var(--second_bg_color);
+    color: var(--main_color);
+}
+.project .cards .card .description div {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    background-color: wheat;
+}
+.project .cards .card .description div:hover {
+    background-color: var(--second_bg_color);
+    box-shadow: 1px 2px 5px var(--main_color);
+}
 /* Projects End */
+
+
+
 
 /* contact */
 
