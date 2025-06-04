@@ -132,5 +132,7 @@ const downloadBtn = document.getElementById('downloadBtn');
 
 cvSelector.addEventListener('change', function () {
     downloadBtn.href = this.value;
+    console.log(downloadBtn.href)
+    console.log(this.value)
     downloadBtn.setAttribute('download', this.value);
 });

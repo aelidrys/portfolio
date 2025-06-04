@@ -268,6 +268,23 @@ body::-webkit-scrollbar-thumb:hover {
     text-decoration: none;
     color: black;
 }
+
+button {
+    background-color: transparent;
+    border: none;
+}
+select {
+    background-color: #0ef;
+}
+select:focus {
+    border: none;
+}
+option {
+    border: none;
+}
+option:focus {
+    border: none;
+}
 /* presentation__bio children End */
 
 .presentation__img img {
