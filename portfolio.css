@@ -333,6 +333,7 @@ option:focus {
 .about_me .container {
     background-color: var(--second_bg_color);
     margin: 0 10%;
+    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
