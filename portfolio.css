@@ -505,7 +505,7 @@ option:focus {
 
 .project .cards .card {
     position: relative;
-    max-width: 300px;
+    max-width: 400px;
     overflow: hidden;
     color: white;
     font-weight: 400;
