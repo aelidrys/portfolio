@@ -543,7 +543,7 @@ option:focus {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(40%);
+    filter: brightness(60%);
     transition: .5s ease;
 }
 .project .cards .card:hover img {
