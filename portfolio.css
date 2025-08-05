@@ -274,16 +274,22 @@ button {
     border: none;
 }
 select {
-    background-color: #0ef;
+    border: none;
+    color: black;
+    appearance: red;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 1px;
+    background-color: var(--main_color);
 }
 select:focus {
-    border: none;
+    outline: #0ef;
 }
 option {
-    border: none;
+    border-radius: 8px;
 }
-option:focus {
-    border: none;
+option:hover {
+    background-color: var(--prem_bg_color);
 }
 /* presentation__bio children End */
 
