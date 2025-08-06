@@ -1,16 +1,18 @@
 
 // ROLE Animation 
 const role = document.querySelector(".role")
+role.textContent = "Full stack Developer.";
 const loadtext = () => {
-    role.textContent = "Full Stack Developer"
     setTimeout(()=> {
-
-        role.textContent = "Machine Learnig intern"
-    },6000)
+        if (role.textContent == "Full stack Developer.")
+            role.textContent = "Machine Learnig intern."
+        else
+            role.textContent = "Full stack Developer."
+    },8000)
 }
 
 loadtext()
-setInterval(loadtext,12000)
+setInterval(loadtext,8000)
 
 // Active Page In Navbar
 const navbar_children =  document.querySelectorAll(".navbar div")

@@ -182,18 +182,37 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: #20242D;
     border-left: 2px solid var(--main_color);
     transform: translateX(0);
-    animation: animate 6s steps(16) infinite;
+    animation:
+     animate 8s steps(22) infinite,
+     blinkCursor 2s step-end infinite;
     
 }
 
 @keyframes animate {
-    40%, 60% {
-        transform: translateX(100%);
+    40%,60% {
+        transform: translateX(98%);
     }
     100% {
         transform: translateX(0);
     }
 }
+/* Typing effect keyframe */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Blinking cursor effect */
+@keyframes blinkCursor {
+  0%, 50%, 100% {
+    border-left-color: var(--main_color);
+  }
+  25%, 75% {
+    border-left-color: transparent;
+  }
+}
+
+
 
 .presentation__bio .description {
     margin: 15px 0;
