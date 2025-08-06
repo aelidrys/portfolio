@@ -184,7 +184,7 @@ body::-webkit-scrollbar-thumb:hover {
     transform: translateX(0);
     animation:
      animate 8s steps(22) infinite,
-     blinkCursor 2s step-end infinite;
+     blinkCursor 8s  infinite;
     
 }
 
@@ -196,18 +196,13 @@ body::-webkit-scrollbar-thumb:hover {
         transform: translateX(0);
     }
 }
-/* Typing effect keyframe */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
 
 /* Blinking cursor effect */
 @keyframes blinkCursor {
-  0%, 50%, 100% {
+  0%, 39%, 45%, 55%, 65%, 100% {
     border-left-color: var(--main_color);
   }
-  25%, 75% {
+  40%, 50%, 60%{
     border-left-color: transparent;
   }
 }
