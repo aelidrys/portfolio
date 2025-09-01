@@ -47,6 +47,19 @@
     font-size: 13px;
     font-weight: 600;
   }
+    .project .cards .card .description .title {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .project .cards .card .description i {
+    font-size: 20px;
+  }
+  .project .cards .card .description .showDemo {
+    width: 25px;
+    height: 25px;
+    padding: 0px;
+    border-radius: 5px;
+  }
   /* PROJECT */
 
 }
@@ -69,7 +82,10 @@
     font-size: 12px;
     margin: 15px 0;
   }
-
+  .presentation__bio .cvDownload_button button, select {
+    font-size: 13px;
+    font-weight: 550;
+  }
   /* ABOUT_ME */
   .presentation__bio .description {
     font-size: 12px;
@@ -121,6 +137,13 @@
   .project .cards .card .description .title {
     font-size: 13px;
     font-weight: 600;
+  }
+  .project .cards .card .description i {
+    font-size: 18px;
+  }
+  .project .cards .card .description .showDemo {
+    width: 22px;
+    height: 22px;
   }
 
   /* PROJECT */
@@ -228,6 +251,9 @@
   }
   .project .page_title{
     font-size: 25px;
+  }
+    .presentation__bio .cvDownload_button button, select {
+    font-size: 12px;
   }
   /* PROJECT */
 

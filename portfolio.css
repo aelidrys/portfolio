@@ -284,6 +284,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 button {
+    font-size: 16px;
+    font-weight: 550;
     background-color: transparent;
     border: none;
 }
@@ -291,8 +293,9 @@ select {
     border: none;
     color: black;
     appearance: red;
-    font-weight: bold;
+    font-weight: 550;
     border-radius: 8px;
+    font-size: 16px;
     padding: 1px;
     background-color: var(--main_color);
 }
@@ -578,12 +581,12 @@ option:hover {
     color: var(--second_bg_color);
     background-color: wheat;
 }
-.project .cards .card .description div:hover i {
+.project .cards .card .description .showDemo:hover i {
     
     background-color: var(--second_bg_color);
     color: var(--main_color);
 }
-.project .cards .card .description div {
+.project .cards .card .description .showDemo {
     width: 30px;
     height: 30px;
     border-radius: 10px;
@@ -593,9 +596,14 @@ option:hover {
     padding: 2px;
     background-color: wheat;
 }
-.project .cards .card .description div:hover {
+.project .cards .card .description .showDemo:hover {
     background-color: var(--second_bg_color);
     box-shadow: 1px 2px 5px var(--main_color);
+}
+
+.ptjctLinks {
+    display: flex;
+    gap: 10px;
 }
 /* Projects End */
 
