@@ -222,7 +222,7 @@ body::-webkit-scrollbar-thumb:hover {
     -webkit-line-clamp: unset;
 }
 
-.presentation__bio .description .large-size {
+.presentation__bio .description .l-size {
     font-size: 18px;
     font-weight: 600;
 }
